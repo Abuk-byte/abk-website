@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background-image: url(backgr.jpg);
+    }
+
+    .form-container {
+      background-color: rgba(0, 0, 0, 0.85);
+      width: 230px;
+      padding: 25px;
+      border-radius: 20px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+      margin: 5px auto;
+      color: white;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      font-size: 24px;
+      color: white;
+      text-transform: lowercase;
+    }
+
+    label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-bottom: 1px solid white;
+      background-color: transparent;
+      color: white;
+    }
+
+    input::placeholder {
+      color: #ccc;
+    }
+
+    .gender {
+      margin: 10px 0;
+    }
+
+    .gender input {
+      margin-right: 5px;
+    }
+
+    .signup-btn {
+      display: block;
+      width: 100%;
+      padding: 10px;
+      background-color: lightseagreen;
+      border: none;
+      border-radius: 15px;
+      margin-top: 20px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+
+    .signup-btn:hover {
+      background-color: orange;
+    }
+
+    footer {
+      text-align: center;
+      margin-top: 20px;
+      color: white;
+      font-size: 12px;
+    }
+  </style>
+</head>
+<body>
+  <form action="login1.html" method="get">
+   <div class="form-container">
+    <h2>signup here</h2>
+
+    <label for="fname">First name:</label>
+    <input type="text" id="fname" placeholder="">
+
+    <label for="lname">Last name:</label>
+    <input type="text" id="lname" placeholder="">
+
+    <div class="gender">
+      <label>Gender:</label>
+      <input type="radio" name="gender" id="male"> Male <br>
+      <input type="radio" name="gender" id="female"> Female 
+    </div>
+
+    <label for="email">email</label>
+    <input type="email" id="email" placeholder="Enter your valid email address">
+
+    <label for="password">Password</label>
+    <input type="password" id="password" placeholder="enter password">
+
+    <button class="signup-btn">Signup</button>
+  </div>
+</form>
+
+</body>
+</html>

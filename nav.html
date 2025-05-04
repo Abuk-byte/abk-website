@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav bar</title>
+</head>
+<style>
+        body {
+        background-color: #71ffff;
+        text-align: center;
+        margin: 0;
+        }
+            nav {
+            background-color:#71ffff;
+            width: 80%;
+            display: block;
+            overflow: auto;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+        }
+        nav a {
+            display: block;
+            color: white;
+            text-align: center;
+            text-decoration:dotted;
+        }
+        nav a:hover {
+            background-color: #575757;
+        }
+        .img{
+            width: 100px;
+            height: auto;
+            margin: 40px;
+            margin-top: 5px;
+        }
+        .dropdown{
+            float: left;
+        }
+        .dropbtn{
+            border: none;
+            color: #f2f2f2;
+            padding: 10px;
+            background-color: #28bf17;
+            margin-bottom: 40px;
+        }
+        .dropdown-content{
+            display: none;
+            position: absolute;
+            background-color: #c7385a;
+            min-width: 120px;
+        }
+        .dropdown-content a{
+            float: none;
+            color: #f2f2f2;
+            padding: 10px;
+            display: block;
+            text-align: left;
+        }
+        .dropdown-content a:hover {
+            background-color: #dd9ede;
+            color: black;
+        }
+        .dropbtn:hover .dropdown-content {
+            display: block;
+        }
+</style>
+<body>
+    <nav>
+        <img src="logoo.jpg" alt="" class="img">
+        
+        <button class="dropbtn">Meltimedia
+        <div class="dropdown-content">
+            <a href="image.html" target="main_frame">image</a>
+            <a href="audio.html" target="main_frame">audio</a>
+            <a href="video.html" target="main_frame">video</a>
+        </div>
+        </button><br>
+        <button class="dropbtn">List
+        <div class="dropdown-content">
+            <a href="ol.html" target="main_frame">Ordered list</a>
+            <a href="ul.html" target="main_frame">Unordered list</a>
+            <a href="dl.html" target="main_frame">Definition list</a>
+        </div>
+        </button><br>
+        <button class="dropbtn"><a href="table.html" target="main_frame">Table</a></button><br>
+        <button class="dropbtn"><a href="framee.html" target="main_frame">Frame</a></button>
+    </nav>
+</body>
+</html>
